@@ -1,0 +1,38 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+img {
+  height: 30em;
+
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+p {
+  font-size: 30px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.titre {
+  animation: 4s linear 0s infinite alternate rise,
+    4s linear 0s infinite alternate bounce;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateX(-5vw);
+  }
+  to {
+    transform: translateX(5vw);
+  }
+}
